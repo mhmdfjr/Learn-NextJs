@@ -17,7 +17,7 @@ Silahkan kerjakan task ini dari project aplikasi kamu:
   - [ ] Halaman home
     - [ ] Komponen Banner
     - [ ] Komponen Detail info Ecommerce
-    - [ ] Komponen Featured Product (50-10 product)
+    - [v] Komponen Featured Product (50-10 product)
   - [ ] Halaman Menambah Product
   - [ ] Pastikan Data Gambar Tersimpan di ImageKIT
 
