@@ -1,8 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
-import CardProduct from "@/components/card/cardProduct";
-import { fetchProduct } from "./action";
-import { useParams } from "next/navigation";
+import CardProduct from "@/components/cardProduct";
+import { fetchProducts } from "../action";
 import { useState, useEffect } from "react";
 
 type ProductType = {
@@ -20,26 +18,26 @@ type ProductType = {
 };
 
 const Products = () => {
-  const { slug } = useParams();
-  const [product, setProduct] = useState(null);
+  const [products, setProducts] = useState<ProductType[]>([]);
 
   useEffect(() => {
-    async function loadProduct() {
-      if (typeof slug === "string") {
-        const data = await fetchProduct(slug);
-        setProduct(data.data);
-        console.log(data);
-      }
+    async function loadProducts() {
+      const data = await fetchProducts();
+      setProducts(data.data);
     }
-    loadProduct();
-  }, [slug]);
-
-  if (!product) return <p>Loading...</p>;
+    loadProducts();
+  }, []);
 
   return (
     <div className="p-10">
       <div className="flex flex-wrap gap-6 justify-center">
-        <CardProduct product={product} />
+        {products.length ? (
+          products.map((product) => (
+            <CardProduct key={product._id} product={product} />
+          ))
+        ) : (
+          <p>No data</p>
+        )}
       </div>
     </div>
   );

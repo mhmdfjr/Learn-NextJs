@@ -1,5 +1,5 @@
 "use client";
-import CardProduct from "@/components/card/cardProduct";
+import CardProduct from "@/components/cardProduct";
 import { fetchProducts } from "./action";
 import { useState, useEffect } from "react";
 
@@ -36,7 +36,7 @@ const Products = () => {
             <CardProduct key={product._id} product={product} />
           ))
         ) : (
-          <p>No data</p>
+          <p>Loading data...</p>
         )}
       </div>
     </div>
