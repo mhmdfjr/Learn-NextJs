@@ -1,46 +1,54 @@
 "use client";
-import CardProduct from "@/components/cardProduct";
-import { fetchProducts } from "../action";
-import { useState, useEffect } from "react";
+
+import { useEffect, useState } from "react";
+import { fetchProduct } from "./action";
+import Image from "next/image";
+import { useParams } from "next/navigation";
 
 type ProductType = {
-  createdAt: string;
+  name: string;
   description: string;
   excerpt: string;
   images: string[];
-  name: string;
   price: number;
   slug: string;
-  tags: string[];
-  thumbnail: string;
-  updatedAt: string;
-  _id: string;
 };
 
-const Products = () => {
-  const [products, setProducts] = useState<ProductType[]>([]);
+const ProductPage = () => {
+  const { slug } = useParams();
+  const [product, setProduct] = useState<ProductType | null>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function loadProducts() {
-      const data = await fetchProducts();
-      setProducts(data.data);
+    if (!slug) return;
+
+    async function loadProduct() {
+      const data = await fetchProduct(slug as string);
+      setProduct(data);
+      setLoading(false);
     }
-    loadProducts();
-  }, []);
+
+    loadProduct();
+  }, [slug]);
+
+  if (loading) return <p>Loading...</p>;
+  if (!product) return <p>Product not found</p>;
 
   return (
-    <div className="p-10">
-      <div className="flex flex-wrap gap-6 justify-center">
-        {products.length ? (
-          products.map((product) => (
-            <CardProduct key={product._id} product={product} />
-          ))
-        ) : (
-          <p>No data</p>
-        )}
-      </div>
+    <div>
+      <h1>{product.name}</h1>
+      <p>{product.description}</p>
+      <p>Price: ${product.price}</p>
+      {product.images.length > 0 && (
+        <Image
+          src={product.images[0]}
+          width={400}
+          height={400}
+          alt={product.name}
+        />
+      )}
     </div>
   );
 };
 
-export default Products;
+export default ProductPage;

@@ -1,0 +1,162 @@
+[
+    {
+      "id": "1",
+      "name": "Smartphone Pro Max",
+      "description": "A high-end smartphone with an advanced camera system and powerful processor.",
+      "excerpt": "Flagship smartphone with cutting-edge technology.",
+      "slug": "smartphone-pro-max",
+      "price": 999.99,
+      "tags": ["smartphone", "electronics", "mobile"],
+      "thumbnail": "https://example.com/images/smartphone-pro-max-thumb.jpg",
+      "images": [
+        "https://example.com/images/smartphone-pro-max-1.jpg",
+        "https://example.com/images/smartphone-pro-max-2.jpg"
+      ],
+      "createdAt": "2024-02-12T10:00:00Z",
+      "updatedAt": "2024-02-12T12:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Wireless Headphones X",
+      "description": "Noise-canceling wireless headphones with long battery life.",
+      "excerpt": "Experience immersive sound with our top-tier headphones.",
+      "slug": "wireless-headphones-x",
+      "price": 199.99,
+      "tags": ["headphones", "audio", "wireless"],
+      "thumbnail": "https://example.com/images/headphones-x-thumb.jpg",
+      "images": [
+        "https://example.com/images/headphones-x-1.jpg",
+        "https://example.com/images/headphones-x-2.jpg"
+      ],
+      "createdAt": "2024-02-11T08:30:00Z",
+      "updatedAt": "2024-02-12T09:45:00Z"
+    },
+    {
+      "id": "3",
+      "name": "Gaming Laptop Ultra",
+      "description": "A powerful gaming laptop with a high-refresh-rate display and dedicated GPU.",
+      "excerpt": "Ultimate gaming performance in a sleek design.",
+      "slug": "gaming-laptop-ultra",
+      "price": 1799.99,
+      "tags": ["laptop", "gaming", "high-performance"],
+      "thumbnail": "https://example.com/images/gaming-laptop-ultra-thumb.jpg",
+      "images": [
+        "https://example.com/images/gaming-laptop-ultra-1.jpg",
+        "https://example.com/images/gaming-laptop-ultra-2.jpg"
+      ],
+      "createdAt": "2024-02-10T15:20:00Z",
+      "updatedAt": "2024-02-12T10:00:00Z"
+    },
+    {
+      "id": "4",
+      "name": "4K Smart TV 55-inch",
+      "description": "A stunning 4K UHD Smart TV with HDR support and built-in streaming apps.",
+      "excerpt": "Immersive viewing experience with 4K resolution.",
+      "slug": "4k-smart-tv-55",
+      "price": 699.99,
+      "tags": ["tv", "electronics", "smart"],
+      "thumbnail": "https://example.com/images/4k-smart-tv-thumb.jpg",
+      "images": [
+        "https://example.com/images/4k-smart-tv-1.jpg",
+        "https://example.com/images/4k-smart-tv-2.jpg"
+      ],
+      "createdAt": "2024-02-09T11:10:00Z",
+      "updatedAt": "2024-02-12T08:50:00Z"
+    },
+    {
+      "id": "5",
+      "name": "Smartwatch Series 7",
+      "description": "A premium smartwatch with health tracking and customizable watch faces.",
+      "excerpt": "Track your fitness and stay connected on the go.",
+      "slug": "smartwatch-series-7",
+      "price": 299.99,
+      "tags": ["smartwatch", "wearable", "fitness"],
+      "thumbnail": "https://example.com/images/smartwatch-thumb.jpg",
+      "images": [
+        "https://example.com/images/smartwatch-1.jpg",
+        "https://example.com/images/smartwatch-2.jpg"
+      ],
+      "createdAt": "2024-02-08T14:40:00Z",
+      "updatedAt": "2024-02-12T07:30:00Z"
+    },
+    {
+      "id": "6",
+      "name": "Bluetooth Speaker BoomX",
+      "description": "A powerful Bluetooth speaker with deep bass and long battery life.",
+      "excerpt": "Enjoy high-quality sound wherever you go.",
+      "slug": "bluetooth-speaker-boomx",
+      "price": 129.99,
+      "tags": ["audio", "bluetooth", "portable"],
+      "thumbnail": "https://example.com/images/bluetooth-speaker-thumb.jpg",
+      "images": [
+        "https://example.com/images/bluetooth-speaker-1.jpg",
+        "https://example.com/images/bluetooth-speaker-2.jpg"
+      ],
+      "createdAt": "2024-02-07T17:25:00Z",
+      "updatedAt": "2024-02-12T06:15:00Z"
+    },
+    {
+      "id": "7",
+      "name": "Mechanical Keyboard Pro",
+      "description": "A mechanical keyboard with RGB backlighting and customizable switches.",
+      "excerpt": "Elevate your typing and gaming experience.",
+      "slug": "mechanical-keyboard-pro",
+      "price": 89.99,
+      "tags": ["keyboard", "gaming", "mechanical"],
+      "thumbnail": "https://example.com/images/mechanical-keyboard-thumb.jpg",
+      "images": [
+        "https://example.com/images/mechanical-keyboard-1.jpg",
+        "https://example.com/images/mechanical-keyboard-2.jpg"
+      ],
+      "createdAt": "2024-02-06T12:55:00Z",
+      "updatedAt": "2024-02-12T05:40:00Z"
+    },
+    {
+      "id": "8",
+      "name": "Drone Explorer 4K",
+      "description": "A lightweight drone with 4K camera and intelligent flight modes.",
+      "excerpt": "Capture stunning aerial shots with ease.",
+      "slug": "drone-explorer-4k",
+      "price": 599.99,
+      "tags": ["drone", "camera", "aerial"],
+      "thumbnail": "https://example.com/images/drone-thumb.jpg",
+      "images": [
+        "https://example.com/images/drone-1.jpg",
+        "https://example.com/images/drone-2.jpg"
+      ],
+      "createdAt": "2024-02-05T10:30:00Z",
+      "updatedAt": "2024-02-12T04:20:00Z"
+    },
+    {
+      "id": "9",
+      "name": "Gaming Mouse Elite",
+      "description": "An ergonomic gaming mouse with adjustable DPI and programmable buttons.",
+      "excerpt": "Enhance your gaming precision with an elite mouse.",
+      "slug": "gaming-mouse-elite",
+      "price": 49.99,
+      "tags": ["mouse", "gaming", "accessory"],
+      "thumbnail": "https://example.com/images/gaming-mouse-thumb.jpg",
+      "images": [
+        "https://example.com/images/gaming-mouse-1.jpg",
+        "https://example.com/images/gaming-mouse-2.jpg"
+      ],
+      "createdAt": "2024-02-04T18:05:00Z",
+      "updatedAt": "2024-02-12T03:10:00Z"
+    },
+    {
+      "id": "10",
+      "name": "Action Camera 8K",
+      "description": "A rugged action camera with 8K recording and waterproof design.",
+      "excerpt": "Capture every adventure in ultra-high definition.",
+      "slug": "action-camera-8k",
+      "price": 399.99,
+      "tags": ["camera", "action", "adventure"],
+      "thumbnail": "https://example.com/images/action-camera-thumb.jpg",
+      "images": [
+        "https://example.com/images/action-camera-1.jpg",
+        "https://example.com/images/action-camera-2.jpg"
+      ],
+      "createdAt": "2024-02-03T22:50:00Z",
+      "updatedAt": "2024-02-12T02:00:00Z"
+    }
+  ]

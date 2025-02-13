@@ -14,7 +14,7 @@ type ProductType = {
   tags: string[];
   thumbnail: string;
   updatedAt: string;
-  _id: string;
+  id: string;
 };
 
 const Products = () => {
@@ -33,7 +33,7 @@ const Products = () => {
       <div className="flex flex-wrap gap-6 justify-center">
         {products.length ? (
           products.map((product) => (
-            <CardProduct key={product._id} product={product} />
+            <CardProduct key={product.id} product={product} />
           ))
         ) : (
           <p>Loading data...</p>
